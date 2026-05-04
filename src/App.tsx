@@ -95,7 +95,7 @@ const techLogos = [
 
   
   return (
-    <div className="min-h-screen bg-(--myDirtyAntique) relative min-w-screen">
+    <div className="min-h-screen bg-(--myDirtyAntique) relative max-w-screen ">
       <Header />
       <CloudColumns />
       <Curtain />
@@ -232,7 +232,7 @@ const techLogos = [
             style={{
               width: "90%",
               height: "50%",
-              marginTop: "15px",
+              marginTop: "40px",
               borderRadius: "60px",
               alignSelf: "center", 
               position: "relative", overflow: "hidden", display: "flex", alignItems: "center"
