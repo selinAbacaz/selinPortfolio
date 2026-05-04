@@ -1,0 +1,19 @@
+.backgroundBody{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  top: -80;
+  left: 0;
+  z-index: 0; 
+  overflow-x: hidden;
+
+}
+
+@media (max-width: 900px) {
+  .backgroundBody {
+    display: none;
+  }
+}
+

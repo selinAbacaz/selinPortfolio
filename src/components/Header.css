@@ -1,0 +1,23 @@
+.button{
+
+background-color: transparent;
+padding: 0.5rem 1rem;
+border-radius: 60px;
+min-width: 100px;
+min-height: 5vh;
+align-items: center;
+justify-content: center;
+display: flex;
+transition: background-color 0.3s ease;
+}
+
+.button:hover{
+
+background-color: #915C27;  
+
+
+}
+
+.button:active{
+background-color: #915C27;
+}
