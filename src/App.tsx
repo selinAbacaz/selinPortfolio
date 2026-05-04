@@ -104,7 +104,7 @@ const techLogos = [
       <Curtain />
       <section className="hero" style={{backgroundColor: "#EFD578"}}>
         <div className="photoPlaceholder">
-          <img src={myPicture} />
+          <img src={myPicture} alt='A picture of the author (Selin B) in a field' />
         </div>
 
         <div className="heroText">
@@ -293,10 +293,10 @@ const techLogos = [
                   <div className="glide" style={{ width: "100%", height: "75%" }}>
                     <div className="glide__track" data-glide-el="track" style={{ height: "100%", borderRadius:"60px"  }}>
                       <ul className="glide__slides" style={{ height: "100%",  padding: 0, margin: 0}}>
-                        <li className="glide__slide photos" style={{background: "pink" }}> <img src={Goldfish} /> </li>
-                        <li className="glide__slide photos" style={{ background: "black" }}> <img src={CareerChef} /> </li>
-                        <li className="glide__slide photos" style={{background: "orange" }}><img src={GardenPLot} /> </li>
-                        <li className="glide__slide photos" style={{ background: "yellow" }}><img src={CascadeCasa} /> </li>
+                        <li className="glide__slide photos" style={{background: "pink" }}> <img src={Goldfish} alt='GoldfishBrain title page, it has 2 big buttons- to go to the pond or to create a list of tasks' /> </li>
+                        <li className="glide__slide photos" style={{ background: "black" }}> <img src={CareerChef} alt= 'CareerChef home page, it showcases a nav bar, an infographic, and 2 buttons leading the user to a basic or detailed quiz'/> </li>
+                        <li className="glide__slide photos" style={{background: "orange" }}><img src={GardenPLot} alt='Several GardenPlot Planner pages on a virtual phone. The Title screen, home page, individual plant, and all plants page is shown'/> </li>
+                        <li className="glide__slide photos" style={{ background: "yellow" }}><img src={CascadeCasa} alt='CascadeCasa level interface, it showcases the main interactive game mechanic which is the book you use to correct CSS code'/> </li>
                       </ul>
                     </div>
 
