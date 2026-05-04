@@ -3,23 +3,7 @@ import "./Curtain.css";
 
 export default function Curtain() {
 
-const LOVES: string[] = [
-  "Cats",
-  "Fine Arts",
-  "Philosophy",
-  "Nature",
-  "My Art Tablet",
-  "Designing things!",
-];
 
-const TECH_TAGS: string[] = ["React", "HTML/CSS", "TypeScript", "Node JS"];
-
-const ROLES: { label: string; accent: boolean; italic: boolean }[] = [
-  { label: "UI/UX Designer ", accent: false, italic: false },
-  { label: "Web Developer ", accent: true, italic: false },
-  { label: "Frontend Engineer ", accent: false, italic: false },
-  { label: "Illustrator", accent: false, italic: true },
-];
 
 const [width, setWidth] = useState(0); 
 
