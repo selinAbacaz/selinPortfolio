@@ -99,7 +99,7 @@ return(
     hover:-translate-y-1
     hover:shadow-xl
     hover:shadow-[#5c350d5d]
-    hover:cursor-pointer
+    
   "
   style={{
     width: "65%",
