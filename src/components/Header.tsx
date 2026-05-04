@@ -1,8 +1,20 @@
 import './Header.css'
 import example from "../images/resumeWebsite.pdf"
+import { useState } from "react";
 
+
+const linkStyle: React.CSSProperties = {
+  display: "block",
+  padding: "10px 16px",
+  textDecoration: "none",
+  
+  fontSize: 22,
+};
 
 export default function Header() {
+
+  const [open, setOpen] = useState(false);
+
   return (
   
   <nav
@@ -59,19 +71,65 @@ export default function Header() {
       
     }}>Projects</a>
 
-  <div
-  className= "button"
-    
-    style={{
-      color: 'white',
-      fontSize: 22,
-      fontFamily: 'Inter',
-      fontWeight: '400',
-      textDecoration: 'none',
-    }}
-  >
-    Find Me
-  </div>
+  <div style={{ position: "relative", display: "inline-block" }}>
+      {/* Button */}
+      <div
+        className="button"
+        onClick={() => setOpen(!open)}
+        style={{
+          color: "white",
+          fontSize: 22,
+          fontFamily: "Inter",
+          fontWeight: "400",
+          cursor: "pointer",
+          userSelect: "none",
+        }}
+      >
+        Find Me
+      </div>
+
+      {/* Dropdown */}
+      {open && (
+        <div
+          style={{
+            position: "absolute",
+            top: "120%",
+            left: 0,
+            backgroundColor: "var(--myDirtyAntique)",
+            color: "var(--myBrown)",
+            borderRadius: "12px",
+            padding: "10px 0",
+            boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+            minWidth: "180px",
+            zIndex: 10,
+          }}
+        >
+          <a
+            href="https://github.com/selinAbacaz"
+            target="_blank"
+            style={linkStyle}
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://linkedin.com/in/selin-bacaz"
+            target="_blank"
+            style={linkStyle}
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://devpost.com/SelinBacaz?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+            target="_blank"
+            style={linkStyle}
+          >
+            DevPost
+          </a>
+        </div>
+      )}
+    </div>
 
 
 </nav>

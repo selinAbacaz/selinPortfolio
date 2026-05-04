@@ -47,11 +47,12 @@
 .hero {
   padding: 100px 40px 0;
   display: flex;
-  gap: 60px;
+  gap: 70px;
   min-height: 90vh;
   overflow: hidden;
   justify-content: center;
   z-index: 10;
+  padding-top: 140px;
 
 }
 
@@ -120,15 +121,17 @@ border-radius: 32px;
   position: relative;
   z-index: 1;
   margin-top: 60px;
+  max-width: 40vw;
 }
 
 .heading {
-  font-Size:  10rem ;
+  font-Size:  8rem ;
   color:  var(--myBrown) ;
   line-Height: 1.1;
 }
 .sparkle {
   color:  var(--myYellow) ;
+  font-size: 6rem;
 }
 .subheading {
   font-Style:  italic ;
@@ -136,6 +139,16 @@ border-radius: 32px;
   color:  var(--myDirtyAntique) ;
   margin-Top:  10px ;
   z-index: 1;
+}
+
+.subheader {
+  font-Style:  italic ;
+  font-Size:  2rem ;
+  color:  var(--myDirtyAntique) ;
+  margin-Top:  10px ;
+  z-index: 1;
+  
+  
 }
 
 .aboutMeBackground{

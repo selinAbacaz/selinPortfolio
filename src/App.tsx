@@ -111,10 +111,8 @@ const techLogos = [
           <h1 className="heading">
             Hello ! <span className="sparkle">✦</span>
           </h1>
-          <p className="subheading">
-            Welcome to my
-            <br />
-            Portfolio Website...
+          <p className="subheader">
+            Im passionate about crafting clean, creative, and functional user interfaces that feel as good as they look !
           </p>
         </div>
         
