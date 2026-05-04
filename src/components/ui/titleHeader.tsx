@@ -12,7 +12,9 @@ return(
 <section style={{width: "100%", height:"100%"}}>
         <Header />
         <CloudColumns />
-        <Curtain />
+        <div style={{ pointerEvents: "none" }}>
+  <Curtain />
+</div>
         <section className="hero" style={{backgroundColor: "#EFD578"}}>
           <div className="photoPlaceholder">
             <img src={myPicture} alt='A picture of the author (Selin B) in a field' />

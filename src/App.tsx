@@ -3,9 +3,6 @@
 import './App.css'
 import '@glidejs/glide/dist/css/glide.core.min.css';
 declare module "@glidejs/glide";
-import Footer from './components/Footer'
-import {BottomClouds} from "../src/components/ui/bottomClouds"
-import ContactForm from './components/ui/ContactForm'
 import SlideSection from './components/ui/slideSection'
 import TitleHeader from './components/ui/titleHeader'
 import AboutMeSection from './components/ui/aboutMeSection';
