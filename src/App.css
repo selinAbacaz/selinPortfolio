@@ -33,6 +33,12 @@
   cursor: pointer;
 }
 
+.glide__arrow:hover{
+background-color: #804a15;
+color: var(--myDirtyAntique);
+
+}
+
 .small{
 
 }
@@ -159,14 +165,16 @@ border-radius: 32px;
 }
 
 .contactMe{
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
+  position: relative;
 
 }
 
 .myTimeline{
-  height: 140vh;
+  min-height: 140vh;
   width: 100%;
+  
 
 }
 

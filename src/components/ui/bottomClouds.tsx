@@ -1,41 +1,56 @@
+import { useEffect, useRef, useState } from "react";
 import "./clouds.css";
 
-const styles: Record<string, React.CSSProperties> = {
-  wrapper: {
+export const BottomClouds = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [height, setHeight] = useState(0);
+  
+
+  useEffect(() => {
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (entry) {
+        setHeight(entry.contentRect.height);
+        
+      }
+    });
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const columns = new Array(14).fill(0);
+  
+
+  return (
+    <div
+      ref={containerRef}
+      style={{
     position: "absolute",
     bottom: 0,
     left: 0,
+    
     width: "100%",
-    height: "fit-content",
+    height: "100%",
     display: "flex",
-    alignItems: "flex-start",
+    alignItems: "flex-end",
     zIndex: 1,
     overflowX: "hidden",
-    maxWidth: "100vw",
-  },
-
-  cloud: {
-    width: "200px",
-    height: "80vh",
-    borderTopRightRadius: "180px",
-    borderTopLeftRadius: "180px",
-    backgroundColor: "var(--myDarkGreen)",
-    marginLeft: "-60px",
-    
-  },
-};
-
-export const BottomClouds = () => {
-  const columns = new Array(14).fill(0);
-
-
-  return (
-    <div style={styles.wrapper}>
+  }}
+    >
       {columns.map((_, i) => (
         <div
           key={i}
           style={{
-            ...styles.cloud,
+            width: "200px",
+            height: height * 0.8, 
+            borderTopRightRadius: "180px",
+            borderTopLeftRadius: "180px",
+            backgroundColor: "var(--myDarkGreen)",
+            marginLeft: i === 0 ? "0px" : "-60px"
             
           }}
         />
