@@ -10,13 +10,13 @@ export default function ContactMeSection(){
 
 return(
 
-<section id="contactMe" className="contactMe" style= {{flexDirection: "column"}}>
+<section id="contactMe" className="contactMe" style= {{flexDirection: "column", display: "flex"}}>
           <BottomClouds/>
           <div style={{ pointerEvents: "none" }}>
                     <BottomCurtain />
           </div>
-          <section className="heroBottom" style={{paddingTop: "10vh"}}>
-              <div className="ContactPlaceholder" style={{ marginTop:"10vh", display:"flex", flexDirection: "column", textAlign:"left", alignItems:"flex-start"}}>
+          <section className="heroBottom" style={{marginTop: "15vh", marginBottom: "5vh",}}>
+              <div className="ContactPlaceholder" style={{ marginTop:"10vh",marginBottom: "10vh", display:"flex", flexDirection: "column", zIndex: "20", textAlign:"left", alignItems:"flex-start"}}>
                 <p className="subheading" style={{color: "var(--myBrown)"}}>
                   <b>Contact Me !</b>
                 </p>
@@ -32,7 +32,8 @@ return(
                 <ContactForm></ContactForm>
               </div>
         
-          </section><Footer></Footer>
+          </section>
+          <Footer></Footer>
         </section>
 
 
