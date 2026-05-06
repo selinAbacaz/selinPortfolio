@@ -113,7 +113,7 @@ return(
             <div  style= {{width: "100%", height: "100%",justifyContent: "center", alignItems: "center", display: "flex" }}>
             
               <div style={{display: "flex", flexDirection: "column", height: "100%", width: "100%", color: "var(--myDirtyAntique)" }}>
-                <div style={{marginTop: "5px", marginRight: "40%", justifyContent:"center", alignItems:"baseline", display: "flex", fontSize: "32px"}}> <b> My Daily Tools: </b> </div>
+                <div style={{marginTop: "1vh", marginRight: "40%", justifyContent:"center", alignItems:"baseline", display: "flex", fontSize: "32px"}}> <b> My Daily Tools: </b> </div>
                 
                 <div style={{display: "flex", height: "100%", width: "100%", justifyContent:"center", alignItems:"center", borderRadius: "45px"}}>
                   <div className= "bg-(--myDirtyAntique)/40" style={{display: "flex",  height: "85%", width: "90%", justifyContent:"center", alignItems:"center",textAlign: "center", alignContent: "center", borderRadius: "35px", color: "var(--myBrown)", fontSize: "28px", flexWrap:"wrap" }}>

@@ -2,9 +2,27 @@ import { useEffect, useRef, useState } from "react";
 import "./clouds.css";
 
 export const BottomClouds = () => {
+
+const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const pillarWidth = width / 2;
+
+
+  
+
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [height, setHeight] = useState(0);
-  
 
   useEffect(() => {
     const observer = new ResizeObserver((entries) => {
@@ -45,7 +63,7 @@ export const BottomClouds = () => {
         <div
           key={i}
           style={{
-            width: "200px",
+            width: pillarWidth,
             height: height * 0.8, 
             borderTopRightRadius: "180px",
             borderTopLeftRadius: "180px",
