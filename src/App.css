@@ -33,6 +33,12 @@
   cursor: pointer;
 }
 
+.glide__arrow:hover{
+background-color: #804a15;
+color: var(--myDirtyAntique);
+
+}
+
 .small{
 
 }
@@ -165,8 +171,9 @@ border-radius: 32px;
 }
 
 .myTimeline{
-  height: 140vh;
+  min-height: 140vh;
   width: 100%;
+  
 
 }
 

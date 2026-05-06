@@ -32,7 +32,6 @@ export default function Header() {
   display: 'flex',
   justifyContent: 'flex-end',
   alignItems: 'center',
-  gap: '25px',
   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
   zIndex: 9999
 }}
@@ -57,8 +56,20 @@ export default function Header() {
   
 
   
-
   <a 
+    className= "button"
+    
+    href="#aboutMe"
+    style={{
+        color: 'white',
+        fontSize: 22,
+        fontFamily: 'Inter',
+        fontWeight: '400',
+        textDecoration: 'none',
+        
+      }}>About Me</a>
+  <a 
+
   className= "button"
   
   href="#FeaturedPortfolio"
@@ -72,7 +83,7 @@ export default function Header() {
     }}>Projects</a>
 
   <div style={{ position: "relative", display: "inline-block" }}>
-      {/* Button */}
+      
       <div
         className="button"
         onClick={() => setOpen(!open)}
@@ -127,6 +138,11 @@ export default function Header() {
           >
             DevPost
           </a>
+          <a 
+            
+            href="#contactMe"
+            style={linkStyle}
+            >Contact Me</a>
         </div>
       )}
     </div>
