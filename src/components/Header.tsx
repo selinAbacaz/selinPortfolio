@@ -20,8 +20,9 @@ export default function Header() {
   <nav
   style={{
   position: 'fixed',
-  top: '20px',
+  top: '1vw',
   left: '50%',
+  width: "60vw",
   transform: 'translateX(-50%)',
   backgroundColor: 'rgba(92, 52, 13, 0.85)',
   backdropFilter: 'blur(10px)',
@@ -30,7 +31,7 @@ export default function Header() {
   padding: '0.5rem 1.5rem',
   borderRadius: '60px',
   display: 'flex',
-  justifyContent: 'flex-end',
+  justifyContent: "space-between",
   alignItems: 'center',
   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
   zIndex: 9999
@@ -40,7 +41,7 @@ export default function Header() {
     style={{
       
     
-      fontSize: 22,
+      fontSize: "1.2vw",
       fontFamily: 'Inter',
       fontWeight: '400',
       textDecoration: 'none',
@@ -62,7 +63,7 @@ export default function Header() {
     href="#aboutMe"
     style={{
         color: 'white',
-        fontSize: 22,
+        fontSize: "1.2vw",
         fontFamily: 'Inter',
         fontWeight: '400',
         textDecoration: 'none',
@@ -75,7 +76,7 @@ export default function Header() {
   href="#FeaturedPortfolio"
   style={{
       color: 'white',
-      fontSize: 22,
+      fontSize: "1.2vw",
       fontFamily: 'Inter',
       fontWeight: '400',
       textDecoration: 'none',
@@ -89,7 +90,7 @@ export default function Header() {
         onClick={() => setOpen(!open)}
         style={{
           color: "white",
-          fontSize: 22,
+          fontSize: "1.2vw",
           fontFamily: "Inter",
           fontWeight: "400",
           cursor: "pointer",
@@ -109,9 +110,9 @@ export default function Header() {
             backgroundColor: "var(--myDirtyAntique)",
             color: "var(--myBrown)",
             borderRadius: "12px",
-            padding: "10px 0",
+            padding: "1vw 0",
             boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-            minWidth: "180px",
+            minWidth: "10vw",
             zIndex: 10,
           }}
         >

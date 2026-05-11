@@ -25,24 +25,24 @@ return(
     
     <div className="backgroundBody" >
             <div style={{display:"flex", flexDirection:"row"}}>
-                <div style= {{height: "1100px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "1000px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "900px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "850px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "68vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "60vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "53vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "50vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
 
             </div>
             <div style={{display:"flex", flexDirection:"row"}}>
-                <div style= {{height: "750px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "700px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "700px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "750px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "46vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "42vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "42vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "46vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
 
             </div>
             <div style={{display:"flex", flexDirection:"row"}}>
-                <div style= {{height: "850px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px" }}></div>
-                <div style= {{height: "900px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "1000px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
-                <div style= {{height: "1100px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "50vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px" }}></div>
+                <div style= {{height: "53vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "60vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
+                <div style= {{height: "68vw", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderBottomLeftRadius: "60px", borderBottomRightRadius: "60px"}}></div>
 
             </div>
     </div>

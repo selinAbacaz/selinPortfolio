@@ -15,8 +15,8 @@ return(
           <div style={{ pointerEvents: "none" }}>
                     <BottomCurtain />
           </div>
-          <section className="heroBottom" style={{marginTop: "15vh", marginBottom: "5vh",}}>
-              <div className="ContactPlaceholder" style={{ marginTop:"10vh",marginBottom: "10vh", display:"flex", flexDirection: "column", zIndex: "20", textAlign:"left", alignItems:"flex-start"}}>
+          <section className="heroBottom" style={{marginTop: "15vh", marginBottom: "5vh", justifyContent: "center", alignItems: "center"}}>
+              <div className="ContactPlaceholder" style={{marginBottom: "10vh", display:"flex", flexDirection: "column", zIndex: "20", textAlign:"left", alignItems:"flex-start"}}>
                 <p className="subheading" style={{color: "var(--myBrown)"}}>
                   <b>Contact Me !</b>
                 </p>

@@ -26,7 +26,7 @@ export const CloudColumns = () => {
   const styles: Record<string, React.CSSProperties> = {
     wrapper: {
       position: "absolute",
-      top: -80,
+      
       left: 0,
       width: "100vw",
       height: "fit-content",
@@ -39,8 +39,10 @@ export const CloudColumns = () => {
 
     cloud: {
       width: pillarWidth,
-      height: "750px",
-      borderRadius: "180px",
+      height: "50vw",
+      borderBottomRightRadius: "180px",
+      borderBottomLeftRadius: "180px",
+
       marginLeft: "-60px",
       transform: "translateY(-120%)",
       animation: "dropIn 0.6s ease forwards",
