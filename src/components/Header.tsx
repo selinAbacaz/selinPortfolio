@@ -8,7 +8,6 @@ const linkStyle: React.CSSProperties = {
   padding: "10px 16px",
   textDecoration: "none",
   
-  fontSize: 22,
 };
 
 export default function Header() {
@@ -22,7 +21,8 @@ export default function Header() {
   position: 'fixed',
   top: '1vw',
   left: '50%',
-  width: "60vw",
+  maxHeight: "10vh",
+  minWidth: "max-content",
   transform: 'translateX(-50%)',
   backgroundColor: 'rgba(92, 52, 13, 0.85)',
   backdropFilter: 'blur(10px)',
@@ -41,7 +41,7 @@ export default function Header() {
     style={{
       
     
-      fontSize: "1.2vw",
+      fontSize: "1.6vw",
       fontFamily: 'Inter',
       fontWeight: '400',
       textDecoration: 'none',
@@ -63,7 +63,7 @@ export default function Header() {
     href="#aboutMe"
     style={{
         color: 'white',
-        fontSize: "1.2vw",
+        fontSize: "1.6vw",
         fontFamily: 'Inter',
         fontWeight: '400',
         textDecoration: 'none',
@@ -76,7 +76,7 @@ export default function Header() {
   href="#FeaturedPortfolio"
   style={{
       color: 'white',
-      fontSize: "1.2vw",
+      fontSize: "1.6vw",
       fontFamily: 'Inter',
       fontWeight: '400',
       textDecoration: 'none',
@@ -90,7 +90,7 @@ export default function Header() {
         onClick={() => setOpen(!open)}
         style={{
           color: "white",
-          fontSize: "1.2vw",
+          fontSize: "1.6vw",
           fontFamily: "Inter",
           fontWeight: "400",
           cursor: "pointer",
