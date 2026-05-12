@@ -21,7 +21,7 @@ export default function Header() {
   position: 'fixed',
   top: '1vw',
   left: '50%',
-  maxHeight: "10vh",
+  maxHeight: "5vw",
   minWidth: "max-content",
   transform: 'translateX(-50%)',
   backgroundColor: 'rgba(92, 52, 13, 0.85)',
