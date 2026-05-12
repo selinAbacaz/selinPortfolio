@@ -41,7 +41,7 @@ const [width, setWidth] = useState(0);
   }, []);
 
   const columns = new Array(14).fill(0);
-  
+  const thisHeight= height* 0.8;
 
   return (
     <div
@@ -64,7 +64,7 @@ const [width, setWidth] = useState(0);
           key={i}
           style={{
             width: pillarWidth,
-            height: height * 0.8, 
+            height: `${thisHeight}px`, 
             borderTopRightRadius: "180px",
             borderTopLeftRadius: "180px",
             backgroundColor: "var(--myDarkGreen)",

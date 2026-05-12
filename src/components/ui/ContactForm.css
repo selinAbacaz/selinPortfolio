@@ -1,6 +1,6 @@
 .contact-section {
   width: 100%;
-  max-width: 50rem;
+  max-width: 40vw;
   margin-left: auto;
   margin-right: auto;
   
@@ -9,12 +9,12 @@
 }
 
 .contact-intro > * + * {
-  margin-top: 1rem;
+  margin-top: 1vw;
 }
 
 .contact-title {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 2vw;
+  line-height: 2vw;
   font-weight: 700;
     color: var(--myBrown);
 
@@ -22,13 +22,14 @@
 
 .contact-description {
   color: var(--myBrown);
+  font-size: 2vw;
   
 }
 
 .form-group-container {
   display: grid;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 1vw;
+  margin-top: 1vw;
   
   
 }
@@ -40,20 +41,20 @@
 }
 
 .form-label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2vw;
     color: var(--myBrown);
 
 }
 
 .form-input,
 .form-textarea {
-  padding: 0.5rem;
+  padding: 1vw;
   border: 1px solid #e5e7eb;
   display: flex;
-  height: 2.5rem;
+  height: 3vw;
   width: 100%;
   border-radius: 0.375rem;
-  font-size: 0.875rem;
+  font-size: 1.2vw;
   line-height: 1.25rem;
   color: var(--myBrown);
   background-color: var(--myDirtyAntique);
@@ -69,19 +70,24 @@
 
 .form-textarea:focus-visible {
  
-  outline-offset: 2px;
+  outline-offset: 2vw;
 }
 
 .form-textarea {
-  min-height: 120px;
+  height: 8vw;
 }
 
 .form-submit {
   width: 100%;
-  margin-top: 1.2rem;
+  height: 4vw;
+  margin-top: 1.2vw;
   background-color: var(--myOrange);
   color: var(--myDirtyAntique);
   padding: 13px 5px;
   border-radius: 0.375rem;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }

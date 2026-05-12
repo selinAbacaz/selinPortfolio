@@ -62,7 +62,7 @@ return(
           <hr style={{color: "var(--myBrown)", backgroundColor:"var(--myBrown)", borderColor: "var(--myBrown)", height: ".1vw", marginBottom: "1vw", width: "80%", margin: "0 auto 1vw auto", display: "flex" }}></hr>
             <section className= "small" style={{ display: "flex", width: "94vw", height: "70vh", justifyContent: "center", alignItems: "flex-start", flexDirection: "row", gap: "1vw", marginTop: "1vw"}}>
               <div style={{flexDirection: "column", display: "flex", width: "80vw", height: "100%", justifyContent: "center", alignItems: "center", }}>
-                <div className='bg-(--myDarkGreen)/40' style={{height:"90%", width: "80%", borderRadius: "4vw", display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column"}}>
+                <div className='bg-(--myDarkGreen)/40' style={{height:"100%", width: "80%", borderRadius: "4vw", display: "flex", justifyContent: "flex-start", alignItems: "center", flexDirection: "column"}}>
                   <div style={{marginTop: "2.4vw", overflowY:"scroll", paddingLeft: "2vw", paddingRight: "2vw", marginRight: "1vw", marginBottom: "2vw"}}>
                     
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign:"center", fontSize: "2.8vw", color: "var(--myDirtyAntique)", marginBottom: ".5vw"}}><b>{slideTitle[index]}</b></div>
@@ -79,19 +79,28 @@ return(
                   display: "flex",
                   flexDirection: "column",
                   width: "50%",
-                  height: "95%",
+                  height: "100%",
                   justifyContent: "center",
                   alignItems: "center",
                   
                 }}
               >
+                
                 <div style={{display: "flex",
                   flexDirection: "column",
-                  width: "90%",
+                  width: "100%",
                   height: "100%",
-                  justifyContent: "center",
-                  alignItems: "center",}}>
-                  <div className="glide" style={{ width: "100%", height: "75%" }}>
+                  justifyContent: "flex-start",
+                  alignItems: "center"}}>
+                  
+                  <div className='bg-(--myDarkGreen)/40' style={{display: "flex",
+                  flexDirection: "column",
+                  width: "80%",
+                  height: "3vw",
+                  justifyContent: "center", fontSize: "1.2vw",
+                  alignItems: "center", color: "var(--myBrown)", borderRadius: "4vw"}}> Note: Press the slide to open the project !</div>
+
+                  <div className="glide" style={{ width: "100%", height: "80%", marginBottom: "3vw"}}>
                     <div className="glide__track" data-glide-el="track" style={{ height: "100%", borderRadius:"4.2vw"  }}>
                       <ul className="glide__slides" style={{ height: "100%",  padding: 0, margin: 0}}>
                         <li className="glide__slide photos" style={{background: "pink" }}   > 

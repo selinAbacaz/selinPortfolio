@@ -66,9 +66,9 @@ color: var(--myDirtyAntique);
 }
 
 .heroBottom {
-  padding: 100px 40px 0;
+  padding: 4vh 3vw 0;
   display: flex;
-  min-height: 90vh;
+  height: fit-content;
   overflow: hidden;
   justify-content: center;
   z-index: 10;
@@ -101,16 +101,16 @@ color: var(--myDirtyAntique);
 }
 
 .ContactPlaceholder{
-  width:  600px ;
-  height:  400px ;
+  width:  28vw ;
+  height:  10vw ;
   border-Radius:  16px ;
   flex-Shrink: 0;
   display:  flex ;
   align-Items:  center ;
   justify-content:  center ;
-  font-Size:  14px ;
+  font-Size:  2vw ;
   text-Align:  center ;
-  margin-right: 150px;
+  margin-right: 8vw;
   z-index: 20;
 
 }
@@ -168,7 +168,7 @@ border-radius: 32px;
 }
 
 .contactMe{
-  min-height: 90vh;
+  max-height: fit-content;
   width: 100%;
   position: relative;
 
