@@ -68,7 +68,7 @@ export default function Timeline() {
       top: "50%",                 
       transform: "translateY(-50%)",
       right: "60px",             
-      fontSize: "28px",
+      fontSize: "2vw",
       color: "var(--myBrown)",
     }}
   >
@@ -90,18 +90,18 @@ export default function Timeline() {
           {/* RIGHT SIDE */}
           <div
             style={{
-              marginLeft: "80px",
+              marginLeft: "5vw",
               backgroundColor: "#C6C47A",
               borderRadius: "25px",
-              padding: "20px",
-              width: "70%",
+              padding: "1vw",
+              width: "60vw",
               display: "flex",
               alignItems: "center",
-              height: "30vh",
+              height: "32vh",
               marginTop:"3vh",
             }}
           >
-            <ul style={{ margin: 0, fontSize: "20px", color: "var(--myBrown)", listStyleType:"disc", marginLeft:"5vw" }}>
+            <ul style={{ margin: 0, fontSize: "1.4vw", color: "var(--myBrown)", listStyleType:"disc", marginLeft:"5vw", paddingTop: "1vw" }}>
               {entry.items.map((text, i) => (
                 <li key={i} style={{marginBottom: "2vh",}}>{text}</li>
               ))}

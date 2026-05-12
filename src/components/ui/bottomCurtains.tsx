@@ -1,34 +1,50 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./BottomCurtain.css";
 
 export default function BottomCurtain() {
 
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [height, setHeight] = useState(0);
+  const [width, setWidth] = useState(0); 
+  const pillarWidth = width / 12;
 
 
-const [width, setWidth] = useState(0); 
+  useEffect(() => {
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (entry) {
+        setHeight(entry.contentRect.height);
+        
+      }
+    });
 
-useEffect(() => {
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
 
-  handleResize();
+    return () => observer.disconnect();
+  }, []);
 
-  window.addEventListener("resize", handleResize);
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
 
-const pillarWidth = width / 12;
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 return(
 
-    
-    <div className="myBackgroundBody" >
+    <div ref={containerRef} className="myBackgroundBody" >
+      
             <div style={{display:"flex", flexDirection:"row", alignItems: "flex-end"}}>
-                <div style= {{height: "450px",width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
-                <div style= {{height: "350px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
-                <div style= {{height: "250px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
-                <div style= {{height: "200px", width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
+                <div style= {{height: height *.5, width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
+                <div style= {{height: height*.4, width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
+                <div style= {{height: height*.3, width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
+                <div style= {{height: height*.2, width: pillarWidth, backgroundColor: "var(--myLightGreen)", borderTopLeftRadius: "60px", borderTopRightRadius: "60px"}}></div>
 
             </div>
             
@@ -41,3 +57,4 @@ return(
 
 
 }
+

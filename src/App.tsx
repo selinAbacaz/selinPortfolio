@@ -19,7 +19,7 @@ function App() {
 
   
   return (
-    <div className="min-h-screen bg-(--myDirtyAntique) relative max-w-screen ">
+    <div className="bg-(--myDirtyAntique) relative" style={{width: "100vw", overflowX:"hidden"}}>
 
       <TitleHeader></TitleHeader>
       <AboutMeSection></AboutMeSection>
